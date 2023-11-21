@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #222831;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #111720;
+  padding: 40px 0;
+  font-family: "Bungee", sans-serif;
+}
+
+.scoreboard {
+  text-align: center;
+  margin: 50px 0 50px;
+}
+.scores-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 21px;
+}
+.score-info {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+.score-message {
+  font-weight: bolder;
+  font-size: 21px;
+}
+.score-box .sign {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-square {
+  height: 160px;
+  width: 160px;
+}
+
+.btn-square .sign {
+  font-size: 80px;
+}
+
+.btn {
+  border: 2px solid #111720;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+
+.btn:hover {
+  background-color: #111720;
+}
+.reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+#resetBtn {
+  height: 45px;
+  width: 70px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111720;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.by-cabsho h4 > a {
+  text-decoration: none;
+  color: #f4e869;
+}
+
+/* Mobile Resposive */
+@media (max-width: 550px) {
+  .btn-square {
+    height: 100px;
+    width: 100px;
+  }
+  .btn-square .sign {
+    font-size: 50px;
+  }
+  .score-box .sign {
+    font-size: 50px;
+  }
+}
